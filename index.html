@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en" class="desktop landscape"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Obsidian Chain - Decentralized Asset Diversification</title>
+    <title>Obsidian Chain - Auditable Charity Payments</title>
     
     <meta name="keywords" content="lisk, crypti, dapp, dapps, decentralized application, dapp store, crypto, currency, cryptocurrency, smart contracts, smart contract, decentralized applications, wallet, blockchain, sia">
-    <meta name="description" content="Trace back your trasactions with Obsidian Chain.">
+    <meta name="description" content="Trace back your charitable trasactions with Obsidian Chain.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="application-name" content="Obsidian Chain - Decentralized Asset Diversification">
+    <meta name="application-name" content="Obsidian Chain - Auditable Charity Payments">
 
     <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet"/>
     <link href="./assets/icon" rel="stylesheet">
     <link href="./assets/font-awesome.min.css" rel="stylesheet">
@@ -20,20 +21,20 @@
         <div data-step="1" class="section gray_section stepSection" id="readMore">
             <div class="section_inner">
                 <div class="deploy_dapps">
-                    <div class="section_caption text_center">The future potential of the Lisk application platform</div>
-                    <div class="sub_caption text_gray_2 text_center">Three simple steps towards your own blockchain application</div>
+                    <div class="section_caption text_center">The future potential of building your Philanthropy CV.</div>
+                    <div class="sub_caption text_gray_2 text_center">Three simple steps towards your own Philanthropy CV</div>
                     <div class="deploy_steps">
-                        <div class="deploy_step stepBtn step_1"><i class="material-icons">phonelink</i>
+                        <div class="deploy_step stepBtn step_1"><i class="material-icons">fiber_new</i>
                             <p>Step 1</p>
-                            <div class="deploy_step_name">Code</div>
+                            <div class="deploy_step_name">Sign-up</div>
                         </div>
-                        <div class="deploy_step stepBtn step_2"><i class="material-icons">cloud_upload</i>
+                        <div class="deploy_step stepBtn step_2"><i class="material-icons">attach_money</i>
                             <p>Step 2</p>
-                            <div class="deploy_step_name">Deploy</div>
+                            <div class="deploy_step_name">Donate</div>
                         </div>
-                        <div class="deploy_step stepBtn step_3"><i class="material-icons">device_hub</i>
+                        <div class="deploy_step stepBtn step_3"><i class="material-icons">assignment_turned_in</i>
                             <p>Step 3</p>
-                            <div class="deploy_step_name">Use</div>
+                            <div class="deploy_step_name">Receipt</div>
                         </div>
                     </div>
                 </div>
@@ -45,8 +46,8 @@
                     <div class="gl_table_cell">
                         <div class="section_inner">
                             <div class="step_description">
-                                <h2 class="step_caption fw_600">Build Incredible Applications</h2>
-                                <p>Decentralised blockchain applications will be built on Lisk from the ground up in pure Javascript and take advantage of the powerful Lisk APIs. In addition, every app will run in its own sidechain to ensure that Lisk itself stays safe and scalable. Currently in development, these features will become available towards Q4 of 2017.</p>
+                                <h2 class="step_caption fw_600">Be a part of the Philanthropy Blockchain</h2>
+                                <p>Sign up using your biometrics e.g. your fingerprint and link up to your savings account</p>
                                 <a href="./learn_more" class="btn_v2 fw_600 wide_btn white_btn">Learn more</a>
                             </div>
                         </div>
@@ -60,15 +61,15 @@
 
 sandbox<span class="token punctuation">.</span><span class="token function">sendMessage</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
     call<span class="token punctuation">:</span> <span class="token string">"dapps#receive"</span><span class="token punctuation">,</span>
-    args<span class="token punctuation">:</span> <span class="token punctuation">{</span>body<span class="token punctuation">:</span> <span class="token string">"Hello Lisk!"</span><span class="token punctuation">}</span>
+    args<span class="token punctuation">:</span> <span class="token punctuation">{</span>body<span class="token punctuation">:</span> <span class="token string">"Hello Donor!"</span><span class="token punctuation">}</span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
 sandbox<span class="token punctuation">.</span><span class="token function">onMessage</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span>msg<span class="token punctuation">,</span> cb<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"receive message from lisk"</span><span class="token punctuation">,</span> msg<span class="token punctuation">.</span>body<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"receive message from recepient"</span><span class="token punctuation">,</span> msg<span class="token punctuation">.</span>body<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token function">cb</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-<span class="token comment" spellcheck="true">// lisk ======================</span>
+<span class="token comment" spellcheck="true">// obsidian-chain ======================</span>
 
 <span class="token keyword">var</span> sandbox <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Sandbox</span><span class="token punctuation">(</span><span class="token string">"index.js"</span><span class="token punctuation">,</span> dappId<span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span>msg<span class="token punctuation">,</span> cb<span class="token punctuation">)</span> <span class="token punctuation">{</span>
     console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"receive message from dapp "</span> <span class="token operator">+</span> dappId<span class="token punctuation">,</span> msg<span class="token punctuation">.</span>body<span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -90,9 +91,8 @@ sandbox<span class="token punctuation">.</span><span class="token function">run<
                     <div class="gl_table_cell">
                         <div class="section_inner">
                             <div class="step_description">
-                                <h2 class="step_caption fw_600">Easy, Rapid Deployment</h2>
-                                <p>The Lisk platform will allow for a multitude of storage options for your blockchain applications. Deploy your code in a .zip archive to services such as GitHub or a web server and
-                                once deployed you can register your applications on the Lisk platform by filling in necessary fields like name, description, tags and the download link.</p>
+                                <h2 class="step_caption fw_600">Designate Who You Want To Support</h2>
+                                <p>The Obsidian Chain Client App will allow you to designate recepient(s) that you want your money to go to. The process is transparent and reliable as transactions are recorded on the chain.</p>
                                 <a href="./learn_more" class="btn_v2 fw_600 wide_btn white_btn">Learn more</a>
                             </div>
                             <figure class="step_figure">
@@ -106,28 +106,28 @@ sandbox<span class="token punctuation">.</span><span class="token function">run<
                     <div class="gl_table_cell">
                         <div class="section_inner">
                             <div class="step_description">
-                                <h2 class="step_caption fw_600">Unlock the Power of Lisk</h2>
-                                <p>The Lisk network is a decentralized powerhouse. By utilizing our extensive user base, end users and developers can find third party nodes to execute future blockchain applications through servers all over the world in a truly decentralized manner.<br><br>
-                                As a developer, grow the application's user base through the combined efforts of the Lisk Directory and the Lisk global community network.</p>
+                                <h2 class="step_caption fw_600">Receive A Trusted Record of Your Donation</h2>
+                                <p>The Obsidian Chain is a decentralized Philanthropy CV. By utilizing the proof of stake, every use can help secure the network. That is, your Philanthropy CV will not be atered.<br><br>
+                                Every donor can be rest assured their donation reaches the designated benefactor(s).</p>
                                 <a href="./learn_more" class="btn_v2 fw_600 wide_btn white_btn">Learn more</a>
                             </div>
                             <ul class="work_process">
                                 <li class="work_process_step">
                                     <figure class="work_process_fig">
                                         <p class="fig_img"><img src="./assets/process_step_1.png" alt="Store your code on GitHub or your own web server."></p>
-                                        <figcaption>Store your code on GitHub or a web server.</figcaption>
+                                        <figcaption>Get a copy of your chartable trasaction to be shared or used as verification.</figcaption>
                                     </figure>
                                 </li>
                                 <li class="work_process_step work_process_step_2">
                                     <figure class="work_process_fig">
                                         <p class="fig_img"><img src="./assets/process_step_2.png" alt="Utilize Lisk master nodes to secure your sidechain and execute the code."></p>
-                                        <figcaption>Secured by worldwide decentralized computation of code.</figcaption>
+                                        <figcaption>That record, and others, are secured by worldwide decentralized Obsidian Philanthropists.</figcaption>
                                     </figure>
                                 </li>
                                 <li class="work_process_step work_process_step_3">
                                     <figure class="work_process_fig">
                                         <p class="fig_img"><img src="./assets/process_step_3.png" alt="Serve up a seamless experience to users like any other app."></p>
-                                        <figcaption>Monetize applications by providing a seamless experience for users.</figcaption>
+                                        <figcaption>Build your Philanthropy CV.</figcaption>
                                     </figure>
                                 </li>
                             </ul>
@@ -205,10 +205,10 @@ sandbox<span class="token punctuation">.</span><span class="token function">run<
         <div class="abs_container">
             <div class="gl_table_cell">
                 <div class="section_inner">
-                    <h1 class="hero_title">Decentralized Asset Diversification</h1>
-                    <div class="hero_text">Track your transactions</div>
+                    <h1 class="hero_title">Build Your Philanthropy Record</h1>
+                    <div class="hero_text">Authenticate with or <i class="material-icons green">check_circle</i> Verify your charitable transactions</div>
                     <div class="hero_text"><img src="./assets/lisk-nano.png" alt="Lisk Nano" class="lisk_preview"></div>
-                    <a href="./download" class="btn_v2 fw_600 wide_btn orange_btn">Launch</a>
+                    <a href="./app" class="btn_v2 fw_600 wide_btn orange_btn">Launch</a>
                 </div>
             </div>
         </div>
@@ -217,19 +217,16 @@ sandbox<span class="token punctuation">.</span><span class="token function">run<
                 <div class="main_menu_holder">
                     <ul class="main_menu">
                         <li class="menu_item"><a href="./get_started" class="menu_link"><span class="link_text">Get Started</span></a></li>
-                        <li class="menu_item"><a href="./learn_more" class="menu_link"><span class="link_text">Learn More</span></a></li>
-                        <li class="menu_item"><a href="./team" class="menu_link"><span class="link_text">Team</span></a></li>
-                        <li class="menu_item"><a href="./foundation" class="menu_link"><span class="link_text">Foundation</span></a></li>
-                        <li class="menu_item hide_on_mobile"><a href="#" class="btn_v1 login_btn orange_btn">Launch</a></li>
+                        <li class="menu_item"><a href="./learn_more" class="menu_link"><span class="link_text">About</span></a></li>
+                        <li class="menu_item hide_on_mobile"><a href="./app" class="btn_v1 login_btn orange_btn">Launch</a></li>
                     </ul>
-                    <!--<div class="user_menu"><a href="https://login.lisk.io/" class="btn_v1 login_btn orange_btn" target="_blank">Login</a></div>--><a href="#" class="mob_menu_toggle mobMenuBtn material-icons">menu</a>
+                    <a href="#" class="mob_menu_toggle mobMenuBtn material-icons">menu</a>
                 </div>
             </div>
         </header>
     </div>
 </main>
-
-
-    <!-- Twitter -->
-    <script type="text/javascript" async="" src="./assets/widgets.js"></script>
+    <!-- jQuery library (served from Google) -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
 </body></html>
