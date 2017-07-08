@@ -742,9 +742,9 @@ $(function() {
 
         Morris.Donut({
             element: 'morris-donut-chart',
-            data: [{ label: "Download Sales", value: 12 },
-                { label: "In-Store Sales", value: 30 },
-                { label: "Mail-Order Sales", value: 20 } ],
+            data: [{ label: "Fundraisers", value: 12 },
+                { label: "Gift-giveaways", value: 30 },
+                { label: "Elderly Home Visits", value: 20 } ],
             resize: true,
             colors: [
                 tinycolor(config.chart.colorPrimary.toString()).lighten(10).toString(),
