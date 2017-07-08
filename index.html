@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en" class="desktop landscape"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Obsidian Chain - Decentralized Asset Diversification</title>
+    
+    <meta name="keywords" content="lisk, crypti, dapp, dapps, decentralized application, dapp store, crypto, currency, cryptocurrency, smart contracts, smart contract, decentralized applications, wallet, blockchain, sia">
+    <meta name="description" content="Trace back your trasactions with Obsidian Chain.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="application-name" content="Obsidian Chain - Decentralized Asset Diversification">
+
+    <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="./assets/icon" rel="stylesheet">
+    <link href="./assets/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/global.min.css" media="all">
+</head>
+<body class="home" style="zoom: 1;">
+    <main class="wrapper h_screen">
+    <div class="base">
+        <div data-step="1" class="section gray_section stepSection" id="readMore">
+            <div class="section_inner">
+                <div class="deploy_dapps">
+                    <div class="section_caption text_center">The future potential of the Lisk application platform</div>
+                    <div class="sub_caption text_gray_2 text_center">Three simple steps towards your own blockchain application</div>
+                    <div class="deploy_steps">
+                        <div class="deploy_step stepBtn step_1"><i class="material-icons">phonelink</i>
+                            <p>Step 1</p>
+                            <div class="deploy_step_name">Code</div>
+                        </div>
+                        <div class="deploy_step stepBtn step_2"><i class="material-icons">cloud_upload</i>
+                            <p>Step 2</p>
+                            <div class="deploy_step_name">Deploy</div>
+                        </div>
+                        <div class="deploy_step stepBtn step_3"><i class="material-icons">device_hub</i>
+                            <p>Step 3</p>
+                            <div class="deploy_step_name">Use</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section step_section stepSlider slick-initialized slick-slider">
+            <div aria-live="polite" class="slick-list draggable" tabindex="0"><div class="slick-track" style="opacity: 1; width: 3840px; transform: translate3d(0px, 0px, 0px);"><div class="step_unit step_1 slick-slide slick-active" data-slick-index="0" aria-hidden="false" style="width: 1280px;">
+                <div class="abs_container">
+                    <div class="gl_table_cell">
+                        <div class="section_inner">
+                            <div class="step_description">
+                                <h2 class="step_caption fw_600">Build Incredible Applications</h2>
+                                <p>Decentralised blockchain applications will be built on Lisk from the ground up in pure Javascript and take advantage of the powerful Lisk APIs. In addition, every app will run in its own sidechain to ensure that Lisk itself stays safe and scalable. Currently in development, these features will become available towards Q4 of 2017.</p>
+                                <a href="./learn_more" class="btn_v2 fw_600 wide_btn white_btn">Learn more</a>
+                            </div>
+                        </div>
+                        <div class="step_code_block"><div class="code_window">
+    <div class="code_window_btns"></div>
+    <div class="code_container">
+
+<pre class="line-numbers language-javascript"><code class=" language-javascript"><span class="token comment" spellcheck="true">// Blockchain Application ============</span>
+
+<span class="token keyword">var</span> sandbox <span class="token operator">=</span> process<span class="token punctuation">.</span><span class="token function">binding</span><span class="token punctuation">(</span><span class="token string">'sandbox'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+sandbox<span class="token punctuation">.</span><span class="token function">sendMessage</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    call<span class="token punctuation">:</span> <span class="token string">"dapps#receive"</span><span class="token punctuation">,</span>
+    args<span class="token punctuation">:</span> <span class="token punctuation">{</span>body<span class="token punctuation">:</span> <span class="token string">"Hello Lisk!"</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+sandbox<span class="token punctuation">.</span><span class="token function">onMessage</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span>msg<span class="token punctuation">,</span> cb<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"receive message from lisk"</span><span class="token punctuation">,</span> msg<span class="token punctuation">.</span>body<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">cb</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// lisk ======================</span>
+
+<span class="token keyword">var</span> sandbox <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Sandbox</span><span class="token punctuation">(</span><span class="token string">"index.js"</span><span class="token punctuation">,</span> dappId<span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span>msg<span class="token punctuation">,</span> cb<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"receive message from dapp "</span> <span class="token operator">+</span> dappId<span class="token punctuation">,</span> msg<span class="token punctuation">.</span>body<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">cb</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+sandbox<span class="token punctuation">.</span><span class="token function">sendMessage</span><span class="token punctuation">(</span><span class="token punctuation">{</span>body<span class="token punctuation">:</span> <span class="token string">"Hello World!"</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+sandbox<span class="token punctuation">.</span><span class="token function">run</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+    </div>
+</div>
+</div>
+                    </div>
+                </div>
+            </div><div class="step_unit step_2 slick-slide" data-slick-index="1" aria-hidden="true" style="width: 1280px;">
+                <div class="abs_container">
+                    <div class="gl_table_cell">
+                        <div class="section_inner">
+                            <div class="step_description">
+                                <h2 class="step_caption fw_600">Easy, Rapid Deployment</h2>
+                                <p>The Lisk platform will allow for a multitude of storage options for your blockchain applications. Deploy your code in a .zip archive to services such as GitHub or a web server and
+                                once deployed you can register your applications on the Lisk platform by filling in necessary fields like name, description, tags and the download link.</p>
+                                <a href="./learn_more" class="btn_v2 fw_600 wide_btn white_btn">Learn more</a>
+                            </div>
+                            <figure class="step_figure">
+                                <p><img src="./assets/integrations.png" alt="Upload to one of the following services"></p>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div><div class="step_unit step_3 slick-slide" data-slick-index="2" aria-hidden="true" style="width: 1280px;">
+                <div class="abs_container">
+                    <div class="gl_table_cell">
+                        <div class="section_inner">
+                            <div class="step_description">
+                                <h2 class="step_caption fw_600">Unlock the Power of Lisk</h2>
+                                <p>The Lisk network is a decentralized powerhouse. By utilizing our extensive user base, end users and developers can find third party nodes to execute future blockchain applications through servers all over the world in a truly decentralized manner.<br><br>
+                                As a developer, grow the application's user base through the combined efforts of the Lisk Directory and the Lisk global community network.</p>
+                                <a href="./learn_more" class="btn_v2 fw_600 wide_btn white_btn">Learn more</a>
+                            </div>
+                            <ul class="work_process">
+                                <li class="work_process_step">
+                                    <figure class="work_process_fig">
+                                        <p class="fig_img"><img src="./assets/process_step_1.png" alt="Store your code on GitHub or your own web server."></p>
+                                        <figcaption>Store your code on GitHub or a web server.</figcaption>
+                                    </figure>
+                                </li>
+                                <li class="work_process_step work_process_step_2">
+                                    <figure class="work_process_fig">
+                                        <p class="fig_img"><img src="./assets/process_step_2.png" alt="Utilize Lisk master nodes to secure your sidechain and execute the code."></p>
+                                        <figcaption>Secured by worldwide decentralized computation of code.</figcaption>
+                                    </figure>
+                                </li>
+                                <li class="work_process_step work_process_step_3">
+                                    <figure class="work_process_fig">
+                                        <p class="fig_img"><img src="./assets/process_step_3.png" alt="Serve up a seamless experience to users like any other app."></p>
+                                        <figcaption>Monetize applications by providing a seamless experience for users.</figcaption>
+                                    </figure>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div></div></div>
+            
+            
+        </div>
+        <div class="section gray_section">
+            <div class="section_inner">
+                <div class="section_content clearfix ">
+                    <div class="partners_block">
+                        <div class="section_caption text_center text_gray">Collaborations</div>
+                        <ul class="partners_list">
+                            <li class="partners_item"><a href="http://www.lightcurve.io/" target="_blank" class="partners_link"><img src="./assets/lightcurve.png" alt="lightcurve"></a></li>
+                            <li class="partners_item"><a href="http://taikonauten.com/" target="_blank" class="partners_link"><img src="./assets/taikonauten.png" alt="Taikonauten"></a></li>
+                            <li class="partners_item"><a href="http://wachsmanpr.com/" target="_blank" class="partners_link"><img src="./assets/wachsmanpr.png" alt="WachsmanPR"></a></li>
+                            <li class="partners_item"><a href="https://www.bitcoinsuisse.ch/" target="_blank" class="partners_link"><img src="./assets/bitcoinsuisse.png" alt="Bitcoin Suisse AG"></a></li>
+                            <li class="partners_item"><a href="https://www.mme.ch/" target="_blank" class="partners_link"><img src="./assets/mme.png" alt="MME"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer class="footer">
+            <div class="footer_inner">
+                <div class="footer_menu_holder">
+                    <div class="abs_container">
+                        <div class="gl_table_cell">
+                            <div class="footer_menu_block">
+                                <div class="text_center footer_menu_caption footerMenuCaption">Learn</div>
+                                <ul class="text_center footer_m_list">
+                                    <li class="footer_m_item"><a href="https://docs.lisk.io/" class="gl_link" target="_blank">Documentation</a></li>
+                                    <li class="footer_m_item"><a href="https://academy.lisk.io/" class="gl_link" target="_blank">Academy</a></li>
+                                    <li class="footer_m_item"><a href="https://blog.lisk.io/" class="gl_link" target="_blank">Blog</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer_menu_block">
+                                <div class="text_center footer_menu_caption footerMenuCaption">Resources</div>
+                                <ul class="text_center footer_m_list">
+                                    <li class="footer_m_item"><a href="https://explorer.lisk.io/" class="gl_link" target="_blank">Blockchain Explorer</a></li>
+                                    <li class="footer_m_item"><a href="./mediakit" class="gl_link">Media Kit</a></li>
+                                    <li class="footer_m_item"><a href="https://github.com/LiskHQ" class="gl_link" target="_blank">GitHub</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer_menu_block">
+                                <div class="text_center footer_menu_caption footerMenuCaption">Get Involved</div>
+                                <ul class="text_center footer_m_list">
+                                    <li class="footer_m_item"><a href="https://lisk.chat/" class="gl_link" target="_blank">Lisk.Chat</a></li>
+                                    <li class="footer_m_item"><a href="http://gitter.im/LiskHQ/lisk" class="gl_link" target="_blank">Gitter</a></li>
+                                    <li class="footer_m_item"><a href="./careers" class="gl_link" target="_blank">Careers</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer_menu_block">
+                                <div class="text_center footer_menu_caption footerMenuCaption">Social Media</div>
+                                <ul class="text_center footer_m_list">
+                                    <li class="footer_m_item"><a href="https://reddit.com/r/Lisk" class="gl_link" target="_blank">Reddit</a></li>
+                                    <li class="footer_m_item"><a href="https://www.facebook.com/Lisk-1118720888180640/" class="gl_link" target="_blank">Facebook</a></li>
+                                    <li class="footer_m_item"><a href="https://twitter.com/LiskHQ" class="gl_link" target="_blank">Twitter</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_bottom">
+                    <div class="logo_holder"><a href="./" class="logo"><img src="./assets/logo_footer.png" alt="Lisk"></a></div>
+                    <div class="copyright">Copyright © 2017 Lisk Foundation. All rights reserved.</div>
+                    <div class="contactus"><a href="./contact_us" class="gl_link">Contact</a></div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="hero_block text_center">
+        <div class="abs_container">
+            <div class="gl_table_cell">
+                <div class="section_inner">
+                    <h1 class="hero_title">Decentralized Asset Diversification</h1>
+                    <div class="hero_text">Track your transactions</div>
+                    <div class="hero_text"><img src="./assets/lisk-nano.png" alt="Lisk Nano" class="lisk_preview"></div>
+                    <a href="./download" class="btn_v2 fw_600 wide_btn orange_btn">Launch</a>
+                </div>
+            </div>
+        </div>
+        <header class="header fixed sticky">
+            <div class="header_inner"><a href="./" class="logo"><img src="./assets/logo.png" alt="Lisk - Blockchain Application Platform" class="big_logo"><img src="./assets/logo_small.png" alt="Lisk - Decentralized Application Platform" class="small_logo"></a>
+                <div class="main_menu_holder">
+                    <ul class="main_menu">
+                        <li class="menu_item"><a href="./get_started" class="menu_link"><span class="link_text">Get Started</span></a></li>
+                        <li class="menu_item"><a href="./learn_more" class="menu_link"><span class="link_text">Learn More</span></a></li>
+                        <li class="menu_item"><a href="./team" class="menu_link"><span class="link_text">Team</span></a></li>
+                        <li class="menu_item"><a href="./foundation" class="menu_link"><span class="link_text">Foundation</span></a></li>
+                        <li class="menu_item hide_on_mobile"><a href="#" class="btn_v1 login_btn orange_btn">Launch</a></li>
+                    </ul>
+                    <!--<div class="user_menu"><a href="https://login.lisk.io/" class="btn_v1 login_btn orange_btn" target="_blank">Login</a></div>--><a href="#" class="mob_menu_toggle mobMenuBtn material-icons">menu</a>
+                </div>
+            </div>
+        </header>
+    </div>
+</main>
+
+
+    <!-- Twitter -->
+    <script type="text/javascript" async="" src="./assets/widgets.js"></script>
+</body></html>
